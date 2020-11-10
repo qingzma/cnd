@@ -1,5 +1,7 @@
 # Converting Citation Network Dataset v12 into tables.
-https://www.aminer.org/citation
+
+Firstly, please download and extract the dataset from  https://www.aminer.org/citation.
+
 ## Dependency:
 ```
 cmake
@@ -22,7 +24,7 @@ For testing purposes, you could run
 ```
 
 
-Tables include
+## Tables include
 - An "author" table that maps author ids to author names (1:1).
 - A "paper" table that maps paper ids to paper name, venue id, year (1:1)
 - A "venue" table that maps venue ids to venue names (1:1).
