@@ -5,12 +5,15 @@ Firstly, please download and extract the dataset from  https://www.aminer.org/ci
 ## Dependency:
 ```
 cmake
+python 3
 ```
 ## How to use
 clone this repository, cd into the folder, and create a folder called ```build```
 ```
+mkdir build
 cd build
 cmake ..
+make
 ```
 You should now create the executable cnd;
 
@@ -23,6 +26,12 @@ For testing purposes, you could run
 ./cnd ../test.json output_dir
 ```
 
+## Modifications
+the raw data uses the CSV-separators in the publication titles. to avoid this, please run the fixtitle.py scripts to post-process the paper.csv.
+In this way, the  commas are replaced with a semicolon in paper.csv.
+```
+python fixtitle.py 
+```
 
 ## Tables include
 - An "author" table that maps author ids to author names (1:1).
